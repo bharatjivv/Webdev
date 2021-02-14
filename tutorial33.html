@@ -1,0 +1,61 @@
+<!-- More about pseudo selectors -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after Pseudo Selector</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+        }
+        .navigation{
+            font-size: 34px;
+            display: flex;
+
+        }
+        li{
+            border: 4px solid grey;
+            list-style: none;
+            padding: 34px 23px;
+
+        }
+        section{
+            height: 354px;
+            margin: 3px 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 3px solid red;
+            justify-content: center;
+            font-size: 33px;
+        }
+
+        section::after{
+            content: "This is a content";
+
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home </li>
+                <li class="item">About </li> 
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+        <section>
+            <h3>Welcome to coding world</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti sint, sed assumenda, numquam excepturi nihil placeat mollitia quasi quod laboriosam esse et ab vel libero laudantium sapiente quos odit incidunt!</p>
+        </section>
+    </header>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!-- Here we learn about box and text shadows -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            border: 5px solid black;
+            background-color: palegoldenrod;
+
+            /* box-shadow: offset-x offset-y color; */
+            /*box-shadow: x-axis y-axis blur radius color*/
+            /*box-shadow: x-axis y-axis blur radius  spread radius  color*/
+            /* box-shadow: 10px 13px green; */
+            /* For reversing the side of the shadow */
+            /* box-shadow: -10px -13px green; */
+            /* box-shadow: 6px 9px 12px green; */
+            /* box-shadow:inset 2px 4px palegreen; */
+
+            box-shadow: 6px 9px green, 8px 8px blue;
+
+        }
+
+        .card h2{
+            text-shadow: 2px 2px grey;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is C++ course</h2>
+            <p>
+                I have started C++ course which does not mean that i will stop this course
+                We will continue this course till completion.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus laudantium officia dolorum eveniet earum
+                eligendi inventore! Expedita, beatae ab velit nostrum tenetur iste sint esse sit tempore ut blanditiis
+                deleniti, totam quaerat nam a!
+            </p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is HTML course</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus laudantium officia dolorum eveniet earum
+                eligendi inventore! Expedita, beatae ab velit nostrum tenetur iste sint esse sit tempore ut blanditiis
+                deleniti, totam quaerat nam a!
+            </p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card 3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus laudantium officia dolorum eveniet earum
+                eligendi inventore! Expedita, beatae ab velit nostrum tenetur iste sint esse sit tempore ut blanditiis
+                deleniti, totam quaerat nam a!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

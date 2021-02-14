@@ -1,0 +1,49 @@
+<!-- Here comes awesome animations & keyframes in website -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animation</title>
+    <style>
+        .container{
+            background-color: greenyellow;
+        }
+        .box{
+            background-color: green;
+            width: 350px;
+            height: 250px;
+            position: relative;
+            animation-name: harry1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-fill-mode:both;
+            animation-timing-function: ease in-out;
+            /* animation-delay: 3s; */
+            animation-direction: reverse;
+            /* These properties can be put in this one shorthand */
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode */
+            /* animation: harry 5s ease-in-out 1s 12 backwards; */
+        }
+        .box{
+            font-size: 50px;
+        }
+        @keyframes harry1 {
+            from{
+                width: 0px;
+            }
+            to{
+                width: max-width;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a Box
+        </div>
+    </div>
+</body>
+</html>
